@@ -1,3 +1,6 @@
+.hero, .prices{
+    background-color:aquamarine;
+}
 :root {
     --white: #FFFFFF;
     --primary-color: #303030;
@@ -15,25 +18,61 @@ body {
     font-size: 18px;
     color: var(--primary-color);
 }
+.section {
+    padding: 120px 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .link {
     text-decoration: none;
+    font-style: inherit;
+    font-family: inherit;
 
 }
 
 .list {
     list-style: none;
 }
-h1, h2, h3, h4, h5, h5 {
+h1, h2, h3, h4, h5, h5, h6, p {
     margin: 0;
 }
 ul, ol {
     padding-left: 0;
     margin: 0;
 }
+
+/* header */
+
 .header {
     background-color: teal;
 }
+.header-cantainer {
+    /* display: flex; */
+}
 
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+} 
+.navigation-list {
+    display: flex;
+
+}
+.navigation-item:not(:last-child) {
+margin-right: 30px;
+}
+
+/* .logo {
+    margin-left: 0;
+} */
+.header-contacts {
+    margin-right: 43px;
+}
 .navigation-link, .header-contacts {
         font-weight: 600;
         font-size: 12px;
@@ -77,6 +116,8 @@ ul, ol {
     color: var(--primary-color);
 }
 .clarification {
+    margin-bottom: 20px;
+
         font-weight: 600;
         font-size: 11px;
         line-height: calc(15/11) ;
@@ -84,6 +125,8 @@ ul, ol {
         color: var(--clarification);
 }
 .hero-title {
+    margin-bottom: 20px;
+
     font-family: 'Raleway';
     font-size: 72px;
     line-height: calc(85/72);
@@ -109,10 +152,9 @@ ul, ol {
         letter-spacing: 0.1em;
         color: var(--white);
 }
-.clarification.primary {
-    color: var(--primary-color);
-}
 .title {
+    margin-bottom: 20px;
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 42px;
@@ -120,7 +162,10 @@ ul, ol {
     letter-spacing: 0.05em;
     color: var(--primary-color);
 }
+
 .title-second {
+    margin-bottom: 20px;
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 42px;
@@ -129,18 +174,240 @@ ul, ol {
     color: var(--white);
 
 }
+
 .text {
     font-size: 18px;
     line-height: calc(30/18);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
+/* About */
+.about .list {
+    display: flex;
+    /* margin: 120px 30px; */
+} 
+.about .item {
+    margin-right: 30px;
+}
 
-.navigation {}
+.container-about {
+    display: flex;
+}
+.clarification.primary {
+    color: var(--primary-color);
 
-.navigation-list {}
+}
+.about .text {
+    margin-bottom: 20px;
+}
+.about-text {
+    width: 470px;
+}
+.text-second {
+    /* font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400; */
+        font-size: 14px;
+        line-height:calc(26/14);
+        letter-spacing: 0.02em;    
+        color: var(--primary-text-color);
+}
 
-.navigation-item {}
+/* Prices */
+.list-prices {
+    display: flex;
+}
+.prices .list.left {
+    width: 570px;
+    /* outline: 2px solid black; */
+    margin-right: 30px;
+    margin-bottom: 44px;
+    
+}
+.list-left {
+    display: flex;
+    justify-content: space-between;
+} 
+.prices .list.right {
+    width: 570px;
+    margin-bottom: 44px;
+   /* outline: 2px solid black; */
+}
+.list-right {
+    display: flex;
+        justify-content: space-between;
+}
+
+.prices-btn {
+    text-align: center;
+  
+}
+
+/* Features  */
+
+.features .container{
+    display: flex;
+    justify-content: space-between;
+}
+.list-item {
+    
+    max-width: 170px;
+    padding: 20px 24px;
+    
+    background: #F7F7F7;
+
+}
+.features-text {
+
+}
+.features .item {    
+        font-weight: 700;
+        font-size: 42px;
+        line-height:calc(57/42);
+        letter-spacing: 0.05em;    
+        }
+.features .description {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15/11);
+        }
+
+        /* barbers  */
+
+.team .list {
+    display: flex;
+    justify-content: center;
+}
+.team-item:not( :last-child) {
+    margin-right: 30px;
+}
+.team-item {
+    text-align: center;
+}
+
+.team-barbers {
+    margin: 30px 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(25/18);
+        letter-spacing: 0.02em;
+   
+}
+.team .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(19/14);
+        letter-spacing: 0.02em;
+        color:var(--accent-color);
+}
+
+/* Gallery  */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.gallery .clarification {
+    margin-bottom: 44px;
+}
+.gallery .list {
+    display: flex;
+}
+.gallery .item:not( :last-child) {
+margin-right: 30px;
+}
+
+/* contacts */
+.contacts {
+    background-color:dimgray;
+}
+.booking,
+.contacts-list {
+    width: 50%;
+    margin-left: 100px;
+}
+.contacts .container {
+    display: flex;
+}
+.contacts .title-second {
+    margin-bottom: 40px;
+}
+
+.contacts .address .contacts-text {
+    margin-bottom: 20px;
+
+    /* font-family: 'Open Sans'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(30/18);
+    letter-spacing: 0.02em;   
+    color:var(--hero-text-color);
+}
+.address {
+    margin-bottom: 70px;
+}
+.contacts-list .item:not( :last-child) {
+    margin-bottom: 20px;
+}
+.address .link,
+.contacts .text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(30/18);
+        letter-spacing: 0.02em;
+        color: var(--hero-text-color);
+}
+
+.title-work {
+    margin-bottom: 20px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* Footer */
+
+.footer .container,
+.footer .list {
+    display: flex;
+    }
+.footer .item:not( :last-child) {
+    margin-right: 40px;
+}
+     
+.footer .text {
+    margin-right: auto;
+    font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        letter-spacing: 0.2em;
+    
+        color: #9DA4BD;
+}
+
+
+
 
 
 
@@ -151,7 +418,7 @@ ul, ol {
 
 .hero {}
 
-.about {}
+
 
 .prices {}
 
@@ -164,3 +431,6 @@ ul, ol {
 .contacts {}
 
 .footer {}
+
+
+
