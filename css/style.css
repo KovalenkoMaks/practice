@@ -119,8 +119,7 @@ margin-right: 30px;
 
 /* Hero  */
 .hero {
-    position: absolute;
-    top: 0;
+    
 }
 .hero-container {
     display: flex;
@@ -245,6 +244,20 @@ margin-right: 30px;
 }
 .clarification.primary {
     color: var(--primary-color);
+}
+.about .clarification {
+display: flex;
+align-items: center;
+
+}
+.about .clarification::before{
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #303030;
+
+    margin-right: 20px;
 
 }
 .about .text {
