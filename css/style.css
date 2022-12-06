@@ -1,3 +1,4 @@
+
 :root {
     --white: #FFFFFF;
     --primary-color: #303030;
@@ -45,6 +46,15 @@ ul, ol {
     padding-left: 0;
     margin: 0;
 }
+/* Подставить свой цвет вместо white */
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+input:-webkit-text-fill-color {
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+    
+} */
 
 /* header */
 
@@ -104,6 +114,8 @@ margin-right: 30px;
     border-radius: 25px;
     background-color: var(--white) ;
     padding: 12px 20px;
+    min-width: 160px;
+    min-height: 40px;
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -640,13 +652,77 @@ margin-right: 30px;
     width: 50%;
     
 }
+.booking {
+    padding-top: 130px;
+    padding-left: 215px;
+   
+}
 .booking .title {
     color: #F7F7F7;
+   
+    margin-bottom: 44px;
+}
+.booking__form {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+}
+.booking__lable {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.booking__lable:nth-child(1){
+    margin-right: 30px;
+    margin-bottom: 44px;
+    
+}
+.booking__text {
+    position: absolute;
+    top: 3px;
+    transition: transform 300ms linear, color 300ms linear;
+
+font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: rgba(157, 164, 189, 0.4);
+}
+.booking_textarea {
+    width: 570px;
+    height: 76px;
+    resize: none;
+}
+.booking__field:focus-within ~ .booking__text {
+   transform: translateY(-30px);
+   color: #FFFFFF;
+
+}
+.booking__field:not(:placeholder-shown) ~ .booking__text {
+    transform: translateY(-30px);
+}
+.booking__field:focus-within {
+    outline: transparent;
+ }
+.booking__field {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color:#FFFFFF;  
+}
+.booking .btn {
+    margin-top: 44px;
 }
 .contacts {
     background-image: url(../pictures/contacts-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+    padding-top: 130px;
+    padding-bottom: 120px;
 }
 .contacts-list {
     padding-left: 100px;

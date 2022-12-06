@@ -391,8 +391,25 @@
       <div id="Contacts" class="booking-contacts">
         <section class="booking">
           <h2 class="title">Online-booking</h2>
+          <form class="booking__form">
+            <label class="booking__lable">
+              <input class="booking__field" type="name" placeholder=" ">
+             <span class="booking__text"> Name*</span>
+              
+            </label>
+            <label class="booking__lable">
+              <input class="booking__field" type="tel" placeholder=" ">
+              <span class="booking__text">Phone*</span>
+              
+            </label>
+            <label class="booking__lable">
+              <textarea class="booking_textarea booking__field" name="Message" placeholder=" "></textarea>
+              <span class="booking__text">Message</span>
+            </label>
+            <button class="btn primary-btn" type="submit">SEND</button>
+          </form>
         </section>
-        <section class="contacts section">
+        <section class="contacts ">
           <div class="contacts-list">
             <h2 class="title-second">Contacts</h2>
             <address class="address">
@@ -448,8 +465,18 @@
             <use href="./pictures/icons-sprite.svg#icon-close"></use>
           </svg>
         </button> 
-        
-        
+        <strong>Залиште свої данні, ми Вам передзвонимо!</strong>
+        <form>
+          <label>
+            <input type="name">
+          </label>
+          <label>
+            <input type="name">
+          </label>
+          <label>
+            <input type="name">
+          </label>
+        </form>
       </div>
   </body>
   <script src="./js/modal.js"></script>
